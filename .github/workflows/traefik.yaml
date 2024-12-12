@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         compose-file-context:
-          - { stack_name: 'traefik', host: '192.168.2.122' }
+          - { stack_name: 'traefik', host: '192.168.100.4' }
 
     env:
       HOST: ${{ matrix.compose-file-context.host }}
